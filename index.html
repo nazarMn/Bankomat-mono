@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="wrap">
+<div class="megaconteiner">
+    <div class="conteiner1">
+        <div class="top1">
+        <div class="card1">
+            <div class="inputtop1">
+            <input type="text" placeholder="номер карточки"  maxlength="16" class="numbercard" id="numbercard" >
+        </div>
+        <div class="inputbutton1">
+            <input type="text" placeholder="MM/PP"  oninput="formatInput(event)"  maxlength="5" class="MMPP" id="MMPP" >
+            <input type="text" placeholder="CVV/CVC" maxlength="3" class="CVVCVC" id="CVVCVC" >
+        </div>
+        </div>
+    </div>
+    <div class="button1">
+        <div class="number1">
+            <ul id="keyboard">   
+                <li class="letter">1</li>  
+                <li class="letter">2</li>  
+                <li class="letter">3</li>  
+                <li class="letter clearl">4</li>  
+                <li class="letter">5</li>  
+                <li class="letter">6</li> 
+              
+                <li class="letter clearl">7</li>  
+                <li class="letter ">8</li>  
+                <li class="letter">9</li>  
+                <li class="letter clearl">0</li>
+                <li class="return">del</li>
+                <li class="enter" id="enter">ent</li>
+            </ul>  
+        </div>
+    </div>
+
+    </div>
+    <div class="monotex">
+    <h2>MONO</h2><h3>|   Universev Bank</h3>
+</div>
+
+<div class="conteiner2">
+    <button id="exit2" class="exit2"><i class="fa-solid fa-circle-xmark fa-2xl"></i></button>
+    <div class="top2">
+<div class="card2" id="balance2"><img src="./img/img1.jpg" alt=""><h2>Баланс</h2></div>
+<div class="card2" id="withdrawmoney2"><img src="./img/img2.jpg" alt=""><h2>Зняти гроші</h2></div>
+</div>
+<div class="button2">
+<div class="card2" id="replenish2"><img src="./img/img3.jpg" alt=""><h2>Поповнити</h2></div>
+</div>
+</div>
+
+<div class="conteiner3">
+    <button id="exit3" class="exit3"><i class="fa-solid fa-circle-xmark fa-2xl"></i></button>
+<div class="left3">
+<div class="balance">
+    <h1>Баланс</h1>
+    <h1 id="bala3" class="bala3">100₴</h1>
+</div>
+</div>
+<div class="right3">
+    <div class="historytransaction">
+        <div class="top3">
+       <h2>Історія транзакцій</h2>
+    </div>
+     
+    <div class="button3">
+<div class="history3" id="history3"><h3> Рукавичка 27 серпня 2023, 20:27 -64.95₴</h3></div>
+<div class="history3"><h3> Рукавичка 27 серпня 2023, 20:27 -64.95₴</h3></div>
+<div class="history3"><h3> Рукавичка 27 серпня 2023, 20:27 -64.95₴</h3></div>
+<div class="history3"><h3> Рукавичка 27 серпня 2023, 20:27 -64.95₴</h3></div>
+<div class="history3"><h3> Рукавичка 27 серпня 2023, 20:27 -64.95₴</h3></div>
+<div class="history3"><h3> Рукавичка 27 серпня 2023, 20:27 -64.95₴</h3></div>
+<div class="history3"><h3> Рукавичка 27 серпня 2023, 20:27 -64.95₴</h3></div>
+<div class="history3"><h3> Рукавичка 27 серпня 2023, 20:27 -64.95₴</h3></div>
+<div class="history3"><h3> Рукавичка 27 серпня 2023, 20:27 -64.95₴</h3></div>
+<div class="history3"><h3> Рукавичка 27 серпня 2023, 20:27 -64.95₴</h3></div>
+
+    </div>
+
+    </div>
+</div>
+</div>
+<div class="conteiner4">
+    <button id="exit4" class="exit4"><i class="fa-solid fa-circle-xmark fa-2xl"></i></button>
+    <div class="center4">
+    <div class="replenishment4">
+        <h2>Поповнення</h12>
+        <h3 class="balance4">0</h3>
+        <button class="add4" id="add4">+20</button>
+    </div>
+</div>
+</div>
+<div class="conteiner5">
+    <div class="notmoney5">
+<div class="card5">
+    <button id="exit51" class="exit51"><i class="fa-solid fa-circle-xmark fa-2xl"></i></button>
+        <h2>Вибачте, не вистачає грошей</h2>
+    </div>
+    </div>
+    <button id="exit5" class="exit5"><i class="fa-solid fa-circle-xmark fa-2xl"></i></button>
+    <div class="left5">
+        <h2>Зняти кошти</h2>
+            <input type="text" placeholder="Сума знятя"  maxlength="16" class="withdrawal5" id="withdrawal5" >
+
+    </div>
+    <div class="right5">  <div class="number5">
+        <ul id="keyboard5">   
+            <li class="letter5">1</li>  
+            <li class="letter5">2</li>  
+            <li class="letter5">3</li>  
+            <li class="letter5 clearl5">4</li>  
+            <li class="letter5">5</li>  
+            <li class="letter5">6</li> 
+          
+            <li class="letter5 clearl5">7</li>  
+            <li class="letter5 ">8</li>  
+            <li class="letter5">9</li>  
+            <li class="letter5 clearl5">0</li>
+            <li class="return5">del</li>
+            <li class="enter5" id="enter5">ent</li>
+        </ul>  
+    </div></div>
+</div>
+
+</div>
+</div>
+
+
+    
+    <script src="./main.js"></script>
+</body>
+</html>
